@@ -1,6 +1,6 @@
 {
     "name": "jdkysq/translator",
-    "license": "GNU 3.0",
+    "license": "GPL-3.0",
     "description": "消息转换 支持 json xml url array serialize 数据格式之间的互相转换",
     "authors": [
         {

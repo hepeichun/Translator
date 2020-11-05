@@ -16,7 +16,7 @@ class Translator
      * @param $msg
      * @return mixed
      */
-    public function To(string $from, string $to, $msg){
+    public function to(string $from, string $to, $msg){
         $to = "\\jdkysq\\Translator\\helper\\_".strtolower($to);
         $from = "\\jdkysq\\Translator\\helper\\_".strtolower($from);
         return (new $to())->encode((new $from())->decode($msg));

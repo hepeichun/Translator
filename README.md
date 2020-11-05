@@ -4,6 +4,7 @@
 - xml
 - json
 - url
+- array
 - serialize
 
 

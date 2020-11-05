@@ -19,7 +19,7 @@ to(string $original , string $format, mixed $msg)
 - 目标格式
 
 #### $msg
-- 需要抓换的消息
+- 需要转换的消息
 
 #### 返回值
 - 变成目标格式

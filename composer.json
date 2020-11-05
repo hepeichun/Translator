@@ -1,0 +1,19 @@
+{
+    "name": "jdkysq/translator",
+    "license": "GNU 3.0",
+    "authors": [
+        {
+            "name": "jdkysq",
+            "email": "tlwz103@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jdkysq\\Translator\\": "src/"
+        }
+    }
+}

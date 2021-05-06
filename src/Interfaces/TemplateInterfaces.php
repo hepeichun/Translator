@@ -4,14 +4,14 @@
 namespace jdkysq\Translator\Interfaces;
 
 
-interface Template
+interface TemplateInterfaces
 {
     /**
      * 消息解码
      * @param mixed $msg
-     * @return mixed
+     * @return array
      */
-    public function decode($msg);
+    public function decode($msg): array;
 
     /**
      * 消息编码

@@ -3,27 +3,26 @@
 
 namespace jdkysq\Translator\helper;
 
-use jdkysq\Translator\Interfaces\Template;
+use jdkysq\Translator\Interfaces\TemplateInterfaces;
 
-class _array implements Template
+class _array implements TemplateInterfaces
 {
 
+
     /**
-     * 消息解码
      * @param mixed $msg
-     * @return mixed
+     * @return array
      */
-    public function decode($msg)
+    public function decode($msg): array
     {
-        return $msg;
+        return (array)$msg;
     }
 
     /**
-     * 消息编码
      * @param array $msg
-     * @return mixed
+     * @return array
      */
-    public function encode(array $msg)
+    public function encode(array $msg): array
     {
         return $msg;
     }

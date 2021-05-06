@@ -6,6 +6,8 @@ namespace jdkysq\Translator;
 
 /**
  * Class Translator
+ * @deprecated
+ * @see \jdkysq\Translator\Msg
  * @package extend\Translator
  */
 class Translator

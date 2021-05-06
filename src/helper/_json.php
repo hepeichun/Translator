@@ -3,17 +3,16 @@
 
 namespace jdkysq\Translator\helper;
 
-use jdkysq\Translator\Interfaces\Template;
+use jdkysq\Translator\Interfaces\TemplateInterfaces;
 
-class _json implements Template
+class _json implements TemplateInterfaces
 {
 
     /**
-     * 消息解码
      * @param mixed $msg
-     * @return mixed
+     * @return array|mixed
      */
-    public function decode($msg)
+    public function decode($msg) :array
     {
         return json_decode($msg,true);
     }

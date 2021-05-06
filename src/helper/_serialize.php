@@ -4,15 +4,15 @@
 namespace jdkysq\Translator\helper;
 
 
-use jdkysq\Translator\Interfaces\Template;
+use jdkysq\Translator\Interfaces\TemplateInterfaces;
 
-class _serialize implements Template
+class _serialize implements TemplateInterfaces
 {
 
     /**
      * @inheritDoc
      */
-    public function decode($msg)
+    public function decode($msg): array
     {
         return unserialize($msg);
     }
@@ -20,7 +20,7 @@ class _serialize implements Template
     /**
      * @inheritDoc
      */
-    public function encode(array $msg)
+    public function encode(array $msg): string
     {
         return serialize($msg);
     }

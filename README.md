@@ -7,6 +7,10 @@
 - array
 - serialize
 
+## 使用
+```shell
+composer require jdkysq/translator
+```
 
 ## 提供方法（v2.x）
 ### Msg($msg)

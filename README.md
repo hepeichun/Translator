@@ -8,7 +8,56 @@
 - serialize
 
 
-## 提供方法
+## 提供方法（v2.x）
+### Msg($msg)
+```
+/**
+ * 数据转换
+ * @param string $from 来源格式
+ * @return From
+ */
+public function from(string $from): From
+
+/**
+ * 支持的格式检查
+ * @param string $format 探测目标格式
+ * @return bool
+ */
+public static function hasFormat($format): bool
+```
+
+### From()
+```
+/**
+ * 转化的目标格式
+ * @param string $to
+ * @return mixed
+ */
+public function to(string $to)
+
+/**
+ * @return mixed
+ */
+public function encode()
+/**
+ * @return array
+ */
+public function decode() :array
+```
+
+#### 例子Json转xml：
+```php
+$json = '{"id":"1682333591565606218","wfr":"spider","for":"pc"}';
+$translator = new \jdkysq\Translator\Msg($json);
+$ret = $translator->from('json')->to('xml');
+/**
+ * <?xml version="1.0" encoding="UTF-8"?><root><id>1682333591565606218</id><wfr>spider</wfr><for>pc</for></root>
+ */
+var_dump($ret);
+```
+
+
+## 提供方法（v1.x）
 ### Translator->to
 ```
 to(string $original , string $format, mixed $msg)

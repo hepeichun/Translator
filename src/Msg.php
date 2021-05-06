@@ -6,6 +6,10 @@ namespace jdkysq\Translator;
 
 use jdkysq\Translator\tool\From;
 
+/**
+ * Class Msg
+ * @package jdkysq\Translator
+ */
 class Msg
 {
     /**

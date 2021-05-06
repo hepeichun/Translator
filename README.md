@@ -10,7 +10,7 @@
 
 ## 提供方法（v2.x）
 ### Msg($msg)
-```
+```php
 /**
  * 数据转换
  * @param string $from 来源格式
@@ -27,7 +27,7 @@ public static function hasFormat($format): bool
 ```
 
 ### From()
-```
+```php
 /**
  * 转化的目标格式
  * @param string $to
